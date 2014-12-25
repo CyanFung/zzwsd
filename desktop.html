@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Flappy lives!</title>
+
+		<meta property="og:title" content="Flappy Lives!" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Flappy Lives!"/>
+		<meta property="og:image" content="imgs/Banner_FB.png" />
+<!--		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@flappylives">
+		<meta name="twitter:title" content="Flappy Lives!">
+		<meta name="twitter:image:src" content="imgs/Flappy-icon-105.png">-->
+		<link rel="stylesheet" href="style/desktop.css" />
+		<link rel="icon" type="image/png" href="/imgs/Flappy_icon.png" />
+		<link rel="shortcut icon" type="image/png" href="/imgs/Flappy_icon.png" />
+		
+		<script>
+			window.onload = function(){
+				document.getElementById('tweet').onclick = document.getElementById('fbpost').onclick = function (e) {
+					e.preventDefault();
+					window.open(
+						e.currentTarget.href,
+						'_blank',
+						'width=480,height=480,scrollbars=yes,location=no'
+					);
+					return false;
+				}
+			};
+		</script>
+	</head>
+	
+	<body>
+		<div id="content">
+			<div id="phone">
+				<div id="phone-screen">
+					<iframe id="game-iframe" src="game.html" seamless scrollbars="no"></iframe>
+				</div>
+			</div>
+			<div id="mid-content">
+				<div id="mid-content-wrapper">
+					<div id="title">
+						<img src="imgs-desktop/flappylives.png" alt="Flappy Lives">
+					</div>
+					<div id="desktopAndShare">
+						<div id="desktopTextAndArrow">
+							<div id="desktopText">
+								<p>Play Flappy on your desktop!</p>
+							</div>
+							<div id="desktopArrow">
+								<img src="imgs-desktop/arrow.png" alt="&lt;--">
+							</div>
+						</div>
+<!--						<div id="shareButtons">
+							<a href="https://twitter.com/intent/tweet?text=Play%20%23FlappyBird%20on%20your%20phone%2C%20tablet%2C%20and%20desktop%20computer%20at%20http%3A%2F%2Fflappylives.com!%20%23FlappyLives" class="shareButton" id="tweet" target="_blank" rel="external"><img src="imgs-desktop/tweet_button.png" alt="Tweet"></a>
+							<a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.weibo.com/SpadeAceLab&t=Play%20%23FlappyBird%20on%20your%20phone%2C%20tablet%2C%20and%20desktop%20computer%20at%20http%3A%2F%2Fflappylives.com!%20%23FlappyLives" class="shareButton" id="fbpost"><img src="imgs-desktop/fb_button.png" alt="Post on FB"></a>
+						</div>-->
+						<div class="clear"></div>
+					</div>
+					<div id="playOnMobile">
+						<img src="imgs-desktop/phonestuff.png">
+					</div>
+				</div>
+			</div>
+			<div id="pipes-right">
+			</div>
+		</div>
+<!--		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+			ga('create', 'UA-47962219-1', 'flappylives.com');
+			ga('send', 'pageview');
+		</script> -->
+	</body>
+</html>
