@@ -47,8 +47,13 @@
 //			googletag.enableServices();
 //			});
 		</script>
+		<script type="text/javascript">
+    function didLoad() {
+        window.location.href="weiyou://didLoad"  // by decamincow
+    }
+</script>
 	</head>
-	<body>
+	<body onLoad="didLoad()">
 		<div id="mainCon">
 			<div id="limitCon">
 				<header class="screen"><h1>Jumpy Bird - SpadeAceLab</h1></header>
