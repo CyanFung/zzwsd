@@ -19,6 +19,16 @@
 		<link rel="shortcut icon" type="image/png" href="/imgs/Flappy_icon.png">
 		
 		<link rel="kik-icon" href="/imgs/Flappy_kikicon.png">
+
+		<style type="text/css">
+		{
+			-webkit-touch-callout: none;
+			-webkit-user-select: none; / Disable selection/copy in UIWebView */
+		}
+		</style>
+		<script type="text/javascript">
+			document.ontouchmove = function(e) {e.preventDefault()};
+		</script>
 		
 		<script type="text/javascript" src="js/js.min.js?v=7.0.6"></script>
 		<link rel="stylesheet" type="text/css" href="style/css.css?v=7.0.6">
